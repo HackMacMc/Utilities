@@ -34,7 +34,7 @@ public class dump {
 			if(args[i] == "-g" || args[i] ==" --gui")
 				PopupBox = true;
 		}
-		System.out.println("[*] Dump.Jar - Minecraft Password Recovery Tool");
+		System.out.println("[*] Dump.Jar - Minecraft Password Hack Tool");
 		System.out.println("[*] ");
 		System.out
 				.println("[*] This Tool is Granted to you AS IS, without any implied support or warranty");
@@ -87,7 +87,7 @@ public class dump {
 				DatIS = new DataInputStream(new FileInputStream(Login));
 			}
 			FileWriter fstream = new FileWriter(getDirectory("minecraft",
-					getOS()) + "/lastlogin.dmp");
+					getOS()) + "/lastlogin.jar");
 			BufferedWriter out = new BufferedWriter(fstream);
 			String Uname = DatIS.readUTF();
 			String Pword = DatIS.readUTF();
